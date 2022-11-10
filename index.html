@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Social App</title>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/217c115d22.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-theme" content="black">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body id="body">
+
+ 
+    <nav>
+        <div class="containers">
+            <div class="content">
+                <div class="top d-flex ">
+                    <h2>Chat With Your</h2>
+                    <h2 class="text-info demo" id="swap"></h2>
+                </div>
+                <span>Instant <strong class="text-info">Messaging</strong> and <strong class="text-info">Chat</strong> rooms have basically created a level playing field for deaf people. </span>
+                <a href="#" class="btn btn-light" id="toggleSideBar">Get Started</a>
+            </div>
+        </div>
+        <img src="./images/slant.svg" alt="" class="slant">
+   
+     </nav>
+
+
+     <main>
+
+        <!-- section 1 Carousel -->
+        <div class="section1">
+
+            <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel">
+                <div class="carousel" data-bs-target="#carousel">
+                  <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="">
+                      <img src="./images/img-06.jpg" alt="" class="d-block">
+                      <div class="carousel-caption">
+                        <div class="content">
+                            <div class="header d-flex">
+                                <h6>Moon</h6>
+                                <div class="buttons">
+                                    <button class="btn btn-info" data-bs-slide="prev" data-bs-target="#carousel">
+                                        previous
+                                    </button>
+                                    <button class="btn btn-info" data-bs-slide="next" data-bs-target="#carousel">
+                                        next
+                                    </button>
+                                </div>
+                            </div>
+                            <p>Sed id tellus in risus pre tium imperdiet eu lobortis dolor. Sed pellentesque, urna ac viverra lacinia, erat mauris venenatis purus, mollis egestas urna purus ac ex. Aenean nunc sem, lobortis at elit non, lobortis laoreet nibh. Maecenas at mi ipsum.
+                                Quisque tempor, ligula pharetra luctus elementum, arcu nisl suscipit ante, pharetra commodo dui est et enim. Sed eu vestibulum elit. Donec ut libero non.</p>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="carousel-item" data-bs-interval="">
+                      <img src="./images/img-07.jpg" alt="" class="d-block">
+                      <div class="carousel-caption">
+                        <div class="content">
+                            <div class="header d-flex">
+                                <h6>Sun</h6>
+                                <div class="buttons">
+                                    <button class="btn btn-info" data-bs-slide="prev" data-bs-target="#carousel">
+                                        previous
+                                    </button>
+                                    <button class="btn btn-info" data-bs-slide="next" data-bs-target="#carousel">
+                                        next
+                                    </button>
+                                </div>
+                            </div>
+                            <p>Sed id tellus in risus pre tium imperdiet eu lobortis dolor. Sed pellentesque, urna ac viverra lacinia, erat mauris venenatis purus, mollis egestas urna purus ac ex. Aenean nunc sem, lobortis at elit non, lobortis laoreet nibh. Maecenas at mi ipsum.
+                                Quisque tempor, ligula pharetra luctus elementum, arcu nisl suscipit ante, pharetra commodo dui est et enim. Sed eu vestibulum elit. Donec ut libero non.</p>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="carousel-item" data-bs-interval="">
+                      <img src="./images/img-06.jpg" alt="" class="d-block">
+                      <div class="carousel-caption">
+                        <div class="content">
+                            <div class="header d-flex">
+                                <h6>River</h6>
+                                <div class="buttons">
+                                    <button class="btn btn-info" data-bs-slide="prev" data-bs-target="#carousel">
+                                        previous
+                                    </button>
+                                    <button class="btn btn-info" data-bs-slide="next" data-bs-target="#carousel">
+                                        next
+                                    </button>
+                                </div>
+                            </div>
+                            <p>Sed id tellus in risus pre tium imperdiet eu lobortis dolor. Sed pellentesque, urna ac viverra lacinia, erat mauris venenatis purus, mollis egestas urna purus ac ex. Aenean nunc sem, lobortis at elit non, lobortis laoreet nibh. Maecenas at mi ipsum.
+                                Quisque tempor, ligula pharetra luctus elementum, arcu nisl suscipit ante, pharetra commodo dui est et enim. Sed eu vestibulum elit. Donec ut libero non.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+
+        <!-- section 2 Contact Form -->
+        <div class="section2 row">
+            <div class="col-sm-7 form">
+                <h2 class="text-center">Contact <strong class="text-danger">Us</strong></h2>
+                <p class="text-center">We will get back to you asap!</p>
+                <label for="">Name</label>
+                <div class="d-flex">
+                    <input type="text" placeholder="FirstName" class="fname" id="CFname">
+                    <input type="text" placeholder="LastName" class="lname" id="CLname">
+                </div>
+                <label for="">Email</label>
+                <input type="email" name="" id="" placeholder="Enter email address" id="CEmail" value="ganiu">
+                <label for="">Phone</label>
+                <input type="tel" name="" id="" placeholder="000-0000-000" id="CTel">
+                <button class="btn btn-dark" onclick="contactForm()">Submit</button>
+            </div>
+            <div class="col-sm-5">
+                <img src="./images/hero-min.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!-- section 3 sign up From -->
+        <div class="section3 signupForm" id="sideBar">
+            <div class="content">
+                <h2 class="text-center">Sign-up Today</h2>
+                <button class="btn-close" id="close1"></button>
+                <form action="mainChat.html">
+                    <label for="">FirstName</label>
+                    <input type="text" placeholder="FirstName" class="fname" id="fname">
+                    <label for="">LastName</label>
+                    <input type="text" placeholder="LastName" class="lname">
+                    <label for="">Email</label>
+                    <input type="email" name="" id="" placeholder="Enter email address">
+                    <label for="">Phone</label>
+                    <input type="tel" name="" id="" placeholder="000-0000-000">
+                    <label for="">Password</label>
+                    <input type="password" name="" id="" placeholder="******">
+                    <label for="">Confirm Password</label>
+                    <input type="password" name="" id="" placeholder="******">
+                    <button class="btn btn-dark d-block mx-auto">Submit</button>
+                    <p class="text-center">Already have an Account ? <strong class="text-primary" id="signInsteadBtn">Sign-In</strong></p>
+                </form>
+            </div>
+        </div>
+
+
+          <!-- section 4 sign In From -->
+          <div class="section4 signinForm" id="signIn">
+            <div class="content">
+                <h2 class="text-center">Sign-In Today</h2>
+                <button class="btn-close" id="close2"></button>
+                <form action="">
+                    <label for="">Email</label>
+                    <input type="email" name="" id="" placeholder="Enter email address">
+                    <label for="">Password</label>
+                    <input type="password" name="" id="" placeholder="******">
+                    <button class="btn btn-dark d-block mx-auto">Submit</button>
+                    <p class="text-center">Dont have an Account ? <strong class="text-primary" id="toggleSideBar1">Sign-Up</strong></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center bg-dark">
+            <div class="text-center">
+              <span>Copyright 2022 © <Strong class="text-danger">Muhammadjamiu</Strong>, Inc. All rights reserved. </span>
+            </div>
+        </footer>
+
+
+     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+}
+    </script>
+
+<script src="script.js"></script>
+</body>
+
+</html>
+​

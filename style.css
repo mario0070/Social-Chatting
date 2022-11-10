@@ -1,0 +1,460 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    /* background: url(./images/showcase.png); */
+    max-width: 1440px;
+    opacity: 0.0;
+}
+
+#body.valid{
+    opacity: 1.0;
+    transition: 2s;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+nav{ 
+    background: url(./images/hero-min.jpg);
+    min-height: 300px;
+    height: 43em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.slant{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(1px);
+}
+
+.containers{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.347);
+    position: absolute;
+    width: 100%;
+    height: 43em;
+}
+
+.containers .content{
+    margin: 35%  10%  ;
+}
+
+.containers .content h2{
+    font-size: 1.3em;
+    margin-right: .4em;
+}
+
+.containers .content h2:nth-child(1){
+    width: 100%;
+}
+
+.containers .content .demo{
+    position: absolute;
+    margin-left: 7.5em;
+    border-bottom: 1px solid white;
+    border-left: 2px solid white;
+    border-top: 1px solid white;
+    border-right: 2px solid white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.29);
+    padding: .1em;
+    /* width: 20%; */
+}
+
+.containers .content span{
+    display: block;
+    font-size: 1.2em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.705);
+    width: 100%;
+    margin-top: .5em;
+}
+
+.containers .content a{
+    padding: 1em;
+    width: 20em;
+    margin-top: 2em;
+    font-weight: 900;
+}
+
+main{
+    margin-top: 9em;
+}
+
+
+/* section 1 carousel*/
+main .section1 ,main .section2{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9em;
+
+}
+
+main .section1 img{
+    width: 100%;
+    height: 500px;
+}
+
+main .section1 .carousel-caption{
+    color: black;
+    position: inherit;
+    background-color: white;
+    width: 90%;
+    padding: 1em;
+    /* height: 30%; */
+    margin-left: -10%;
+    line-height: 30px;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.114);
+    border-radius: .3em;
+    transform: translateY(-50px);
+}
+
+main .section1 .header{
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+main .section1 .buttons{
+    margin-left: auto;
+}
+
+main .section1 h6{
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main .section1 p{
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.356);
+    font-weight: 600;
+}
+
+
+/* section 2 , the form */
+main .section2{
+    background-color: white;
+    border-radius: .3em;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.114);
+    
+}
+
+main .section2 img{
+   display: none;
+}
+
+main .section2 .form{
+    padding: 1em;
+}
+
+main .section2 h2{
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main .section2 p{
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.582);
+    margin-bottom: 2em;
+}
+
+
+main .section2 input{
+    padding: 1em;
+    border: none;
+    border-radius: .3em;
+    display: block;
+    margin-bottom: 1.5em;
+    box-shadow:.1em .1em 1em rgba(0, 0, 0, 0.148);
+    width: 100%;
+    outline: none;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    transition: .3s;
+}
+
+main .section2 input:focus{
+    background-color: antiquewhite;
+    transition: .3s;
+}
+
+main .section2 input:hover{
+    cursor: pointer;
+}
+
+main .section2 input::placeholder{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.279);
+}
+
+main .section2 .fname{
+    margin-right: 1em;
+}
+
+main .section2 button{
+    padding: .5em;
+    width: 50%;
+    margin-bottom: 2em;
+}
+
+main .section2 label{
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* section 3 signUp Form  SideBAr*/
+
+main .section3,main .section4{
+    overflow: scroll;
+    transition: .3s ease-in-out;
+    position: fixed;
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.237);
+}
+
+#sideBar.valid{
+    width: 75%;
+}
+
+.btn-close{
+    color: white;
+    position: fixed;
+    background-color: whitesmoke;
+    z-index: 300;
+    padding: .5em;
+    margin-top: .5em;
+    margin-left: .5em;
+}
+
+
+#signIn.valid{
+    width: 75%;
+}
+
+main .section3 form,main .section4 form{
+    padding: 1em;
+    transform: translateY(70px);
+}
+
+main .section3 h2,main .section4 h2{
+    z-index: 100;
+    width: 75%;
+    position: fixed;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.237);
+    padding: .3em;
+    color: white;
+    background-color: rgb(132, 24, 24);
+    margin-bottom: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main .section3 input,main .section4 input{
+    padding: .9em;
+    border: none;
+    border-radius: .3em;
+    display: block;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.237);
+    margin-bottom: 1.5em;
+    width: 100%;
+    transition: .4s;
+    outline: none;
+}
+
+main .section3 label,main .section4 label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: brown;
+}
+
+main .section3 input:focus,main .section4 input:focus{
+    background-color: bisque;
+    transition: .4s;
+}
+
+main .section3 p,main .section4 p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+main .section3 strong:hover,main .section4 strong:hover{
+    cursor: pointer;
+}
+
+
+
+/* footer */
+
+
+footer{
+    color: white;
+    width: 100%;
+    padding: 1em;
+    position: absolute;
+    box-shadow: -.1em -.1em 1em rgba(0, 0, 0, 0.142);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+}
+
+footer span:hover{
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+footer span{
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width:600px) {
+
+
+    .containers{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.347);
+    position: absolute;
+    width: 100%;
+    height: 43em;
+}
+
+.containers .content{
+    margin: 10%  10%  ;
+}
+
+.containers .content h2{
+    font-size: 3em;
+    margin-right: .4em;
+}
+
+.containers .content .demo{
+    position: absolute;
+    margin-left: 7.3em;
+    border-bottom: 1px solid white;
+    border-left: 2px solid white;
+    border-top: 1px solid white;
+    border-right: 2px solid white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.29);
+    padding: .1em;
+}
+
+.containers .content span{
+    display: block;
+    font-size: 1.2em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.705);
+    width: 50%;
+    margin-top: .5em;
+}
+
+.containers .content a{
+    padding: 1em;
+    width: 20em;
+    margin-top: 2em;
+    font-weight: 900;
+}
+
+.containers .content{
+    margin: 10%  10%  ;
+}
+
+.containers .content h2:nth-child(1){
+    width: inherit
+}
+
+
+/* section 1 carousel*/
+main .section1 ,main .section2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9em;
+
+}
+
+main .section1 img{
+    width: 80%;
+    height: 500px;
+}
+
+main .section1 .carousel-caption{
+    position: absolute;
+    width: 50%;
+    margin-left: 33%;
+    transform: translateY(0px);
+}
+
+main .section2 img{
+    width: 104%;
+    height: 100%;
+    border-top-right-radius: .3em;
+    border-bottom-right-radius: .3em;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.114);
+    display: inline;
+}
+
+main .section2 .form{
+    padding: 2em;
+}
+
+main .section2  button{
+    margin-bottom: 0em;
+}
+
+
+/* sideBar */
+#sideBar.valid{
+    width: 25%;
+}
+
+#signIn.valid{
+    width: 25%;
+}
+
+main .section3 h2,main .section4 h2{
+    z-index: 100;
+    width: 25%;
+    position: fixed;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.237);
+    padding: .3em;
+    color: white;
+    background-color: rgb(132, 24, 24);
+    margin-bottom: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+  }
